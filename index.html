@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>robloxxa Overlay</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="deps/reconnecting-websocket.min.js"></script>
+    <script src="deps/countUp.js"></script>
+    <script src="deps/tmi.min.js"></script>
+
+</head>
+<body>
+<div class="root">
+    <div class="background" id="background"></div>
+    <div class="frm-game" id="frm-game"></div>
+    <div class="frm-face" id="frm-face"></div>
+    <div class="frm-hand" id="frm-hand"></div>
+    <div class="nickname" id="nickname">
+        robloxxa
+    </div>
+    <div class="ctn-right" id="ctn-right">
+        <div class="ctn-counter" id="ctn-counter">
+            <div class="ctn-circle-big">
+                <div class="ctn-hits" id="h100">0</div>
+                <div class="ctn-hits" id="h50">0</div>
+                <div class="ctn-hits" id="h0">0</div>
+                <div class="ctn-hits" id="hSB">0</div>
+                <div class="ctn-svg">
+                    <svg class="circle-progress" id="progress" height="100%" width="100%">
+                        <circle cx="50%" cy="50%" r="100" stroke="white" stroke-width="5" fill="rgba(0,0,0,0)" />
+                    </svg>
+                </div>
+                <div class="circle-inner">
+                    <span class="score" id="score">2147483647</span>
+                    <span id="acc">100.00%</span>
+                    <span class="grade" id="grade">SS</span>
+                </div>
+                <div class="ctn-svg">
+                    <svg class="circle-life" height="100%" width="100%">
+                        <circle cx="50%" cy="50%" r="90" stroke="white" stroke-width="9" fill="rgba(0,0,0,0)" />
+                    </svg>
+                </div>
+                <div class="ctn-svg">
+                    <svg class="circle-life" id="lifebar" height="100%" width="100%">
+                        <circle cx="50%" cy="50%" r="90" stroke="var(--frmColor)" stroke-width="5" fill="rgba(0,0,0,0)" />
+                    </svg>
+                </div>
+
+            </div>
+            <div class="ctn-combo">
+                <div class="ctn-combo-item" id="combo">20000x</div>
+                <div class="ctn-combo-item" id="pp">1000pp</div>
+                <div class="ctn-combo-item" id="mods">NoMod</div>
+            </div>
+        </div>
+        <div class="ctn-chat ctn-gray-round" id="ctn-chat">
+            <div style="margin-bottom: 10px">chat</div>
+            <div class="ctn-chat-inner" id="ctn-chat-inner"></div>
+        </div>
+    </div>
+    <div class="ctn-bottom" id="ctn-bottom">
+        <div class="ctn-nowplaying ctn-gray-round" id="ctn-nowplaying">
+            <div class="ctn-nowplaying-inner">
+                <span class="np-text">robloxxa - robloxxa [robloxxa] (by robloxxa)</span>
+                <span class="np-text">robloxxa - robloxxa [robloxxa] (by robloxxa)</span>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="twitch.js"></script>
+</div>
+
+</body>
+</html>
